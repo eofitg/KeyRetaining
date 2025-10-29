@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "keyretaining",
+  "version": "${version}",
+  "name": "KeyRetaining",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "net.eofitg.keyretaining.KeyRetaining"
+    ]
+  },
+  "mixins": [
+    "keyretaining.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
