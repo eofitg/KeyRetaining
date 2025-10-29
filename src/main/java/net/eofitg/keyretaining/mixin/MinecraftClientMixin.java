@@ -30,8 +30,6 @@ public class MinecraftClientMixin {
         Window window = client.getWindow();
         GameOptions options = client.options;
 
-        System.out.println("[KeyRetaining] GUI closed, restoring keyboard state");
-
         for (KeyBinding keyBinding : options.allKeys) {
             try {
                 InputUtil.Key key = keyBinding.getDefaultKey();
